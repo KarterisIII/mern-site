@@ -1,0 +1,33 @@
+.ts-descript {
+	width: 100%;
+	&__text {
+		width: 330px;
+		cursor: pointer;
+		height: 30px;
+		font-size: 15px;
+		margin: 6px auto 4px;
+		border-bottom: 1px solid rgba(73, 73, 73, 0.219);
+		
+	}
+	&__input {	
+		margin: 0 auto;	
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.input {
+			width: 100%;
+			.box {
+				margin: 0 auto;
+				margin-right: 11px;
+			}
+		}
+	}
+	&__img {
+		background-image: url('../../../images/edit.svg');
+		width: 25px;
+		height: 25px;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+
+}

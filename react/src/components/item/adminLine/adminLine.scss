@@ -1,0 +1,30 @@
+.wrapper-line {
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0);
+	box-sizing: border-box;
+	
+	&:hover {
+		border: 1px solid rgb(0, 0, 0);
+		.wrapper-edit {
+			position: absolute;
+			top: 20px;
+			right: 60px;
+			width: 24px;
+			height: 24px;
+			z-index: 2;
+			cursor: pointer;
+			background-image: url('../../../images/edit.svg');
+		}
+		.wrapper-delete {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			width: 24px;
+			height: 24px;
+			z-index: 2;
+			cursor: pointer;
+			background-image: url('../../../images/delete.svg');
+		}
+	}
+	
+}

@@ -1,0 +1,74 @@
+.input-text {
+	position: relative;
+	margin-bottom: 5px;
+	width: 100%;
+	&::after {
+		content: '';
+		background-color: black;
+		position:absolute;
+		width: 0%;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		transition: all 1.1s ease 0s;
+	}	
+	&:hover::after {
+		width: 100%;
+	}	
+}
+
+.input-file {
+	text-align:center;			
+	border: 1px solid #0000002f;
+	box-sizing: border-box;
+	background-color: #0000002f;
+}
+
+.input-title-text {
+	display: block;
+	margin-bottom: 5px;
+	box-sizing: border-box;
+	font-size: 12px;
+	padding-left: 10px;
+	font-family: RobotMedium;
+	
+}
+
+::-webkit-input-placeholder {
+	font-size: 10px;
+	color: red;
+	opacity: .8;
+}
+
+.input-title-file {
+	display: block;
+	cursor: pointer;
+	padding:10px 0;
+	font-size: 20px;
+	margin: 0;
+	transition: all 0.5s ease 0s;
+	&:hover {
+		color: #0000002f;
+	}
+}
+
+.input-item-text {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	display: block;
+	margin: 0 auto;		
+	box-sizing: border-box;
+	border: 0;	
+	border-bottom: 1px solid #0000002f;
+	padding: 0;	
+	outline: 0;
+	padding: 0 10px 3px;
+	font-size: 20px;			
+}
+
+.input-item-file {
+	display: none;
+	height: 50px;
+	border: 0;
+}

@@ -1,0 +1,19 @@
+.button {
+	padding: 9px 27px 9px 27px;
+	height: fit-content;	
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	border: 1px solid #0000002f;
+	transition: all .5s;
+	cursor: pointer;
+	&:hover {
+		background-color:rgb(250, 0, 0);
+		color: rgb(255, 255, 255);
+		border: 1px solid #000000;
+	}
+	&.red-button {
+		background-color:rgb(250, 0, 0);
+		color: rgb(255, 255, 255);
+	};
+}
+

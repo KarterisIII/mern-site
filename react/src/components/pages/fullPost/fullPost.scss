@@ -1,0 +1,37 @@
+.full-post {
+	display: flex;
+	justify-content: space-between;
+}
+
+.full-post__box {	
+	flex-basis: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.header__image {
+	
+	height: 500px;
+	overflow:hidden;
+	margin-bottom: 20px;
+	.img__item {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		max-width: 500px;
+		
+	}
+}
+
+.full-post__footer {
+	.footer__top {
+		margin-bottom: 100px;
+	}
+}
+
+.full-post__tags__comment {
+    flex-basis: 30%;
+    
+}
+

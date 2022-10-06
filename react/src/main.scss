@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'RobotLight';	
+	src: local('RobotThin'),
+		url(./fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'RobotMedium';	
+	src: local('RobotMedium'),
+		url(./fonts/Roboto-Medium.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'RobotBold';	
+	src: local('RobotBold'),
+		url(./fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'RobotBoldItalic';	
+	src: local('RobotBoldItalic'),
+		url(./fonts/Roboto-BoldItalic.ttf) format('truetype');
+}
+
+
+
+body {
+	font-family: RobotLight;
+	background-color: rgb(231 231 231);
+}

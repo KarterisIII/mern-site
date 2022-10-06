@@ -1,0 +1,88 @@
+.login {
+	max-width:400px;
+	padding: 40px;
+	margin:0 auto 40px auto;
+	border: 1px solid #0000002f;
+	background-color: rgba(73, 73, 73, 0.075);
+	.login__header {	
+		margin-bottom: 20px;
+		height: 80px;
+		line-height: 80px;
+	}
+	h1 {
+		text-align: center;
+		margin: 0;
+	}
+	.form {
+		width: 100%;
+		margin: 0;
+	}
+	.login__main {
+		margin: 0 auto 50px auto;
+		width: 400px;
+		padding: 0 10px;	
+
+	}
+	.text-field {
+		position: relative;
+		width: 350px;
+		margin: 0 auto;
+		input {
+			display: block;
+			width: 350px;
+			margin: 0 auto 10px auto;
+			border: none;
+			height: 40px;
+		  	line-height: 40px;	
+			font-size: 20px;	  
+			&:focus {
+				outline: none;						
+			  }
+			
+		}
+		.label-name {
+			font-family: RobotMedium;
+			font-size: 20px;
+			text-align: center;						
+		}
+	}
+	
+	
+	.login__list-button {
+		max-width: 400px;
+		margin: 0 auto 10px auto;
+		padding: 0;
+		list-style:none;
+		display: flex;
+		justify-content: space-between;		
+		.button-item {
+			padding: 25px 52px;
+			color: rgba(0, 0, 0, 0.5);
+			text-align: center;
+			border: 1px solid #0000002f;
+			transition: all .8s;
+			&:hover {
+				background-color:rgba(250, 0, 0, 0.37);
+				color: rgb(255, 255, 255);
+			}
+			&.red-button {
+				background-color:rgb(250, 0, 0);
+				color: rgb(255, 255, 255);
+			}
+		}
+	}
+	.login__footer {
+		.auht-button {
+			padding: 25px 52px;
+			border: 1px solid #0000002f;
+			cursor: pointer;
+			background-color: rgba(73, 73, 73, 0.075);
+			transition: all .8s;
+			&:hover {
+				background-color:rgb(250, 0, 0);
+				box-shadow: 1px 1px 4px #0000003b;
+				color: rgb(255, 255, 255);
+			}
+		}
+	}
+}

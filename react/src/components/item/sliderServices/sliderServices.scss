@@ -1,0 +1,82 @@
+.slider-services {
+	padding: 100px 0;
+
+	&__box {
+		position: relative;
+		width: 310px;
+		height: 510px;
+		padding: 5px;
+		transition: all 0.8s ease 0s;
+		transform-style: preserve-3d;
+		box-sizing: border-box;
+		border:	6px solid red;
+		&:hover {
+			box-shadow: 0px 0px 6px 0px rgb(0 0 0);
+		}
+	}
+
+	.front,
+	.back {		
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+		color: white;		
+		text-align: justify;
+	}
+
+	.front {	
+		z-index: 2;
+		transform: rotateY(0deg);
+		background-color: rgb(116, 116, 116);
+		backface-visibility: hidden;
+		&-box {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		&__image {
+			width: 24px;
+			height: 24px;
+			margin-bottom: 20px;
+			border: 5px solid red;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0px 0px 6px 0px rgb(0 0 0);
+		}
+		h2 {
+			margin: 0;
+		}
+	}
+
+	.back {		
+		padding: 10px 5px;
+		box-sizing:border-box;		
+		transform: rotateY(-180deg);
+		background-color: rgb(116, 116, 116);		
+		&__text {
+			overflow: auto;			
+			&::-webkit-scrollbar-thumb {
+				background-color: darkgrey;
+				outline: 1px solid slategrey;
+			}
+			&::-webkit-scrollbar {
+				width: 1px;
+			}
+			&::-webkit-scrollbar-track {
+				box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+			}
+			
+		}
+	}
+	.turn {
+		transform: rotateY(-180deg)
+	}
+}
